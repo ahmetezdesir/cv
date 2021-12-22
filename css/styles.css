@@ -1,0 +1,128 @@
+body {
+    background-color: #F5F5F5;
+    margin: 0px;
+    text-align: center;
+    /* text=align works as long as we have inline block elements such as images 
+    and also works for full width block elements like <p> */
+
+    /* this is font family and it uses default font type in this family */
+    /* we also specify specific font type from the family like below */
+    /* font-family: sans-serif; */
+    /* it affects all the text in the website */
+    /* font-family: verdana, sans-serif; */
+    /* browser first tries to render the page with first defined font type,
+    if browser does not have this font type, it chooses default font type from sans-serif family */
+    /* that is why there is web safe fonts, all os and browsers support these fonts and we can use
+    them for our second choose. */
+    /* if we want everyone to see my website with same font, we can use font embedding */
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin: 50px auto 0px auto;
+    font-size: 5.625rem; /* 100% means 16px, 90px means 562.5% */
+    /* now font size is responsive. If user zooms in, there will be no problem. */
+    /* we got dynamic font size */
+    /* 100% = 16px = 1em */
+    
+    /* if you specify font size in body which is parent class of h1, and then if you specify font size
+    in h1 too, the size wont be overriden and be added up if you use em or %. However, if you use px,
+    size will be overriden because px is static font size. */
+    /* to solve this, css3 or newer versions have rem, root em, which is ignoring root settings */
+    /* suggestion is using rem, it is adaptable, reliable, and least error prone */
+
+    /* width: 20%; */
+    /* when width is 10%, this is no longer a full width block element so text-align won't work. */
+    /* so in this case, we can use margin to align the text*/
+    /* margin: auto will center element horizontally or vertically. */
+    /* margin: 0 auto 0 auto; */
+    /* order is top right bottom left */
+    /* or the order is top and bottom     left and right */
+    /* margin: 0 auto; */
+    /* text align" center will set element if it does not have width element 
+    if it has width element, you can center it by using margin*/
+    font-family: 'Sacramento', cursive;
+    color: #252A34;
+    line-height: 200%;
+
+    /* line-height: 1 is default */
+    /* line-height: 3; */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    /* position: relative; */
+    /* top: 20px; */
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    font-weight: normal;
+    color: #FF2E63;
+}
+
+.cs-student {
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(252, 103, 128);
+    font-weight: normal;
+}
+
+p {
+    margin: 0px;
+}
+
+.top-container {
+    position: relative;
+    background-color: #08D9D6;
+    padding-top: 100px;
+    /* padding means that there will be 20px space between text and the 4 edge of the element*/
+    /* padding: 20px; */
+    /* when you do that, it actually increases the size of the box */    
+}
+
+.middle-container {
+
+}
+
+.bottom-container {
+    
+}
+
+.CS {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    /* if we want to position something relative to another thing, its position should be absolute
+    and also one of its parents needs to have relative positioning as we did in top-container */
+    /* if we dont have parent element thats position is relative, our element's position
+    will be relative to the body when we say position: absolute */
+    position: absolute;
+    /* current value of position if we dont specify is static */
+    bottom: 340px;
+    /* bottom margin is set according to top container since bottom cloud is child class of top container */
+    left: 300px;
+    filter: invert(25%);
+}
+
+
+.top-cloud {
+    position: absolute;
+    /* when we say absolute, we remove this element from the flow so it does not affect other elements' position */
+    right: 300px;
+    top: 50px;
+    filter: invert(25%);
+}
+
+.mountain {
+    width: 50%;
+}
+
+.btn {
+    color: rgb(252, 103, 128);
+}
+
+.footer-link {
+    color: rgb(252, 103, 128);
+}
