@@ -43,7 +43,7 @@ h1 {
     if it has width element, you can center it by using margin*/
     font-family: 'Sacramento', cursive;
     color: #252A34;
-    line-height: 200%;
+    /* line-height: 200%; */
 
     /* line-height: 1 is default */
     /* line-height: 3; */
@@ -83,6 +83,7 @@ p {
     margin: 0px;
     font-weight: bolder;
     color: #252A34;
+    line-height: 2;
 }
 
 .top-container {
@@ -101,8 +102,9 @@ p {
 .bottom-container {
     background-color: #08D9D6;
     position: relative;
-    height: 180px;
+    height: 100px;
     margin-top: 50px;
+    padding: 50px 0 20px 0;
 }
 
 .CS {
@@ -180,6 +182,8 @@ p {
     float: left;
     /* float property lets you move text to the right/left side of the image without using html table */
     margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .skill-img2 {
@@ -192,23 +196,18 @@ p {
 
 .profile {
     width: 25%;
+    /* we did width 25% which disables text-align center, so we use margin to center the element */
     margin: 20px auto 0 auto;
 }
 
 .contact-text {
     margin: 20px auto 50px auto;
-    width: 30%;
-}
-
-.info-text {
-    margin-top: 50px;
+    width: 22%;
 }
 
 .copyright {
     color: #EAEAEA;
-    position: absolute;
-    top: 120px;
-    width: 100%;
+    margin-top: 30px
 }
 
 .footer-link {
@@ -216,16 +215,9 @@ p {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    word-spacing: 300px;
     margin: 0 30px;
 }
 
 .footer-link:hover {
     color: #FF2E63;
 }
-
-.footer-links {
-    position: absolute;
-    top: 60px;
-    width: 100%;
-} 
